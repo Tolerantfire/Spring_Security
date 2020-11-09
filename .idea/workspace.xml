@@ -8,8 +8,38 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="33824cc5-5681-4a23-8490-5be727058095" name="Default Changelist" comment="" />
+    <list default="true" id="33824cc5-5681-4a23-8490-5be727058095" name="Default Changelist" comment="v1">
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/.idea/dataSources/8911f8db-47f1-46c5-9637-48fd343298e4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/.idea/dataSources/8911f8db-47f1-46c5-9637-48fd343298e4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/config/WebConfig2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/config/appInit2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/config/AppInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/controllers/TestController2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/dao/UserDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/dao/UserDAOinterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/java/crud/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/webapp/WEB-INF/pages/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/webapp/WEB-INF/pages/user/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/webapp/WEB-INF/pages/remove.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/webapp/WEB-INF/pages/user/remove.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/webapp/WEB-INF/pages/user.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/webapp/WEB-INF/pages/user/showList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.3.1/Spring_CRUD/src/main/webapp/index.jsp" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,8 +49,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
-        <option value="HTML File" />
         <option value="Interface" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -60,6 +90,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tolerant\IdeaProjects\2.3.1\Spring_CRUD\src\main\webapp\WEB-INF\pages\user" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\tolerant\IdeaProjects\2.3.1\Spring_CRUD\src\main\resourses" />
     </key>
@@ -236,18 +269,51 @@
       <workItem from="1604507888101" duration="5762000" />
       <workItem from="1604513679930" duration="12528000" />
       <workItem from="1604596210435" duration="6633000" />
-      <workItem from="1604605365339" duration="756000" />
+      <workItem from="1604605365339" duration="4124000" />
+      <workItem from="1604952494453" duration="350000" />
+      <workItem from="1604952867131" duration="75000" />
+      <workItem from="1604952963137" duration="941000" />
+      <workItem from="1604954118804" duration="2150000" />
+      <workItem from="1604956295842" duration="886000" />
     </task>
+    <task id="LOCAL-00001" summary="v1">
+      <created>1604606157975</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604606157975</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v1" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="179" width="1092" height="850" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604515702343">
+    <state x="859" y="415" width="520" height="219" key="#Assign_Data_Sources" timestamp="1604956478527">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="414" y="179" width="1092" height="850" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604515702343" />
+    <state x="859" y="415" width="520" height="219" key="#Assign_Data_Sources/0.0.1920.1050@0.0.1920.1050" timestamp="1604956478527" />
+    <state x="414" y="179" width="1092" height="850" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604956400067">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="414" y="179" width="1092" height="850" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604956400067" />
     <state x="765" y="240" key="#com.intellij.ide.util.MemberChooser" timestamp="1604605041004">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -264,58 +330,66 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="685" y="222" key="Github.UntrackedFilesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604606104601" />
-    <state width="1281" height="330" key="GridCell.Tab.0.bottom" timestamp="1604605555267">
+    <state width="1281" height="330" key="GridCell.Tab.0.bottom" timestamp="1604956825523">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555267" />
-    <state width="1281" height="330" key="GridCell.Tab.0.center" timestamp="1604605555267">
+    <state width="1281" height="330" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825523" />
+    <state width="1281" height="330" key="GridCell.Tab.0.center" timestamp="1604956825523">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555267" />
-    <state width="1281" height="330" key="GridCell.Tab.0.left" timestamp="1604605555266">
+    <state width="1281" height="330" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825523" />
+    <state width="1281" height="330" key="GridCell.Tab.0.left" timestamp="1604956825522">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555266" />
-    <state width="1281" height="330" key="GridCell.Tab.0.right" timestamp="1604605555267">
+    <state width="1281" height="330" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825522" />
+    <state width="1281" height="330" key="GridCell.Tab.0.right" timestamp="1604956825523">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555267" />
-    <state width="1281" height="330" key="GridCell.Tab.1.bottom" timestamp="1604605555176">
+    <state width="1281" height="330" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825523" />
+    <state width="1281" height="330" key="GridCell.Tab.1.bottom" timestamp="1604956825400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555176" />
-    <state width="1281" height="330" key="GridCell.Tab.1.center" timestamp="1604605555176">
+    <state width="1281" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825400" />
+    <state width="1281" height="330" key="GridCell.Tab.1.center" timestamp="1604956825400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555176" />
-    <state width="1281" height="330" key="GridCell.Tab.1.left" timestamp="1604605555176">
+    <state width="1281" height="330" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825400" />
+    <state width="1281" height="330" key="GridCell.Tab.1.left" timestamp="1604956825400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555176" />
-    <state width="1281" height="330" key="GridCell.Tab.1.right" timestamp="1604605555176">
+    <state width="1281" height="330" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825400" />
+    <state width="1281" height="330" key="GridCell.Tab.1.right" timestamp="1604956825400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555176" />
-    <state width="1281" height="330" key="GridCell.Tab.2.bottom" timestamp="1604605555177">
+    <state width="1281" height="330" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825400" />
+    <state width="1281" height="330" key="GridCell.Tab.2.bottom" timestamp="1604956825400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555177" />
-    <state width="1281" height="330" key="GridCell.Tab.2.center" timestamp="1604605555177">
+    <state width="1281" height="330" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825400" />
+    <state width="1281" height="330" key="GridCell.Tab.2.center" timestamp="1604956825400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555177" />
-    <state width="1281" height="330" key="GridCell.Tab.2.left" timestamp="1604605555176">
+    <state width="1281" height="330" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825400" />
+    <state width="1281" height="330" key="GridCell.Tab.2.left" timestamp="1604956825400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555176" />
-    <state width="1281" height="330" key="GridCell.Tab.2.right" timestamp="1604605555177">
+    <state width="1281" height="330" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825400" />
+    <state width="1281" height="330" key="GridCell.Tab.2.right" timestamp="1604956825400">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1281" height="330" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604605555177" />
-    <state x="440" y="98" key="SettingsEditor" timestamp="1604515889054">
+    <state width="1281" height="330" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1604956825400" />
+    <state x="440" y="98" key="SettingsEditor" timestamp="1604956136091">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="440" y="98" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604515889054" />
+    <state x="440" y="98" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1604956136091" />
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2" timestamp="1604606170567">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="552" y="257" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1604606170567" />
+    <state x="748" y="425" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1604609504192">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="748" y="425" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1604609504192" />
     <state x="342" y="185" key="new project wizard" timestamp="1604346092396">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

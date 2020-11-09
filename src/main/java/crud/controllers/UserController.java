@@ -1,7 +1,6 @@
 package crud.controllers;
 
-import crud.dao.UserDAO;
-import crud.dao.UserDAOinterface;
+import crud.dao.UserDao;
 import crud.model.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,32 +8,43 @@ import org.springframework.web.bind.annotation.*;
 
 
 @Controller
-public class TestController2 {
+@RequestMapping("/user")
+public class UserController {
 
-    private final UserDAOinterface userDAO;
+    private final UserDao userDAO;
 
-    public TestController2(UserDAOinterface userDAO) {
+    public UserController(UserDao userDAO) {
         this.userDAO = userDAO;
     }
 
+    //Надеюсь, правильно понял комментарии.
+    // выводим список юзеров на url /user:
+    @GetMapping()
+    public String showAllUsers(Model model) {
+        model.addAttribute("currentUsers", userDAO.queryForUser());
+        model.addAttribute("user", new User());
+        return "user/showList";
+    }
 
-    @GetMapping("/user")
+    //добавляем юзера на url /user/add:
+    @GetMapping("/add")
     public String newUser(Model model) {
         model.addAttribute("currentUsers", userDAO.queryForUser());
         model.addAttribute("user", new User());
-        return "user";
+        return "user/add";
     }
 
-    @PostMapping("/user")
-    public String createUser(@ModelAttribute("User") User user) {
+    @PostMapping("/add")
+    public String addUser(@ModelAttribute("User") User user) {
         userDAO.saveUser(user.getName(), user.getAge());
         return "redirect:/user";
     }
 
+    //удаляем юзера по ID на url /user/remove:
     @GetMapping("/remove")
     public String remove(Model model) {
         model.addAttribute("user", new User());
-        return "remove";
+        return "user/remove";
     }
 
     @DeleteMapping("/remove")
@@ -43,10 +53,11 @@ public class TestController2 {
         return "redirect:/user";
     }
 
+    //редактируем юзера по ID на url /user/edit:
     @GetMapping("/edit")
     public String edit(Model model) {
         model.addAttribute("user", new User());
-        return "/edit";
+        return "user/edit";
     }
 
     @PatchMapping("/edit")

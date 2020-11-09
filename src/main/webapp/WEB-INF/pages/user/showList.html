@@ -22,18 +22,8 @@ Working with this page.
 </table>
 
 <br/>
-<form th:method="POST" th:action="@{/user}" th:object="${user}">
-
-    <label for="name">Enter name: </label>
-    <input type="text" th:field="*{name}" id="name"/>
-    <br/>
-    <label for="age">Enter age: </label>
-    <input type="text" th:field="*{age}" id="age"/>
-    <br/>
-    <input type="submit" value="Add user"/>
-</form>
-<br/>
-<p><a href="/remove">Delete user</a></p>
-<p><a href="/edit">Edit user</a></p>
+<p><a href="/user/add">Add user</a></p>
+<p><a href="/user/remove">Remove user</a></p>
+<p><a href="/user/edit">Edit user</a></p>
 </body>
 </html>

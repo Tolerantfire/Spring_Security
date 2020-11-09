@@ -6,7 +6,7 @@
 </head>
 <body>
 
-<form th:method="DELETE" th:action="@{/remove}" th:object="${user}">
+<form th:method="DELETE" th:action="@{/user/remove}" th:object="${user}">
 
     <label for="id">Enter user ID to delete user: </label>
     <input type="text" th:field="*{id}" id="id"/>
