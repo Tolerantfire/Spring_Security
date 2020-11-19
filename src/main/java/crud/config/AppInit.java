@@ -1,5 +1,7 @@
 package crud.config;
 
+import crud.security.SecurityConfig;
+import crud.security.SpringSecurityInitializer;
 import org.springframework.web.filter.HiddenHttpMethodFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
@@ -11,14 +13,15 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     @Override
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]{
-                HiberConfig.class
+                HiberConfig.class, SecurityConfig.class
+
         };
     }
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
         return new Class<?>[]{
-                WebConfig.class
+                WebConfig.class, SpringSecurityInitializer.class
         };
     }
 
@@ -37,4 +40,5 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
         aContext.addFilter("hiddenHttpMethodFilter",
                 new HiddenHttpMethodFilter()).addMappingForUrlPatterns(null, true, "/*");
     }
+
 }

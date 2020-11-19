@@ -1,11 +1,15 @@
 package crud.dao;
 
+import crud.model.Role;
 import crud.model.User;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 @Repository
@@ -15,12 +19,8 @@ public class UserDaoImpl implements UserDao {
     @PersistenceContext
     private EntityManager entityManager;
 
-    @Override
-    public void saveUser(String name, int age) {
-        User user = new User(name, age);
-        entityManager.persist(user);
-        System.out.println("User с именем " + name + " добавлен в базу данных");
-    }
+    @Autowired
+    private RoleDao roleDao;
 
     @Override
     public List<?> queryForUser() {
@@ -36,11 +36,37 @@ public class UserDaoImpl implements UserDao {
     }
 
     @Override
-    public void editUser(int id, String name, int age) {
-        User user = entityManager.find(User.class, id);
-        entityManager.detach(user);
-        user.setAge(age);
-        user.setName(name);
+    public void editUser(User user) {
         entityManager.merge(user);
+    }
+
+    @Override
+    public void addUser(User user) {
+        Set<Role> roles = new HashSet<>();
+        roles.add(roleDao.getById(2));
+        user.setRoles(roles);
+        entityManager.persist(user);
+        System.out.println("User с именем " + user.getName() + "и ролями" + user.getRoles() +" добавлен в базу данных");
+    }
+
+    @Override
+    public void addUserByAdmin(User user) {
+        entityManager.persist(user);
+    }
+
+    @Override
+    public User findByUsername(String username) {
+        System.out.println("вошли в метод findByUsername");
+        User user = (User) entityManager
+                .createQuery("select u from User u where u.name like :username")
+                .setParameter("username", "%" + username.toLowerCase() + "%")
+                .getSingleResult();
+        System.out.println("User с именем " + user.getName() + "и ролями" + user.getAuthorities() + "получен из базы");
+        return user;
+    }
+
+    @Override
+    public User getById(int id) {
+        return entityManager.find(User.class, id);
     }
 }
