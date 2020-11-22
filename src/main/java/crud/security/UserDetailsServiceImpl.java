@@ -1,4 +1,4 @@
-package crud.service;
+package crud.security;
 
 import crud.dao.UserDao;
 import crud.model.User;
@@ -28,10 +28,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         if (user == null) {
             throw new UsernameNotFoundException(String.format("User %s not found", username));
         }
-       org.springframework.security.core.userdetails.User user1 = new org.springframework.security.core.userdetails.User
-               (user.getUsername(), user.getPassword(), user.getAuthorities());
-        System.out.println(user1);
-        return  user1;
+        System.out.println(user);
+        return  user;
     }
 
 }

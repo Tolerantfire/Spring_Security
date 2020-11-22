@@ -59,7 +59,7 @@ public class UserDaoImpl implements UserDao {
         System.out.println("вошли в метод findByUsername");
         User user = (User) entityManager
                 .createQuery("select u from User u where u.name like :username")
-                .setParameter("username", "%" + username.toLowerCase() + "%")
+                .setParameter("username", username)
                 .getSingleResult();
         System.out.println("User с именем " + user.getName() + "и ролями" + user.getAuthorities() + "получен из базы");
         return user;
